@@ -1,0 +1,1 @@
+Signed commits show, that it has come from verifed user. So other users can trust this commit if they trust its author.
