@@ -64,4 +64,4 @@ bf1e711 (origin/master, origin/HEAD, master) HEAD@{12}: pull: Fast-forward
 ```
 
 4. From output of `git reflog` I took hash of commit I want return to.
-5. 
+5. `git reset --hard 3903bb9` output is `HEAD is now at 3903bb9 Merge branch 'lab3' into git-reset-practice`. After this command state of branch returned to this commit
