@@ -75,3 +75,7 @@ example.com.		1706	IN	A	93.184.215.14
 
 
 ```
+## Analysis
+
+From `traceroute` we can get that between `example.com` and my computer were made 16 steps.
+From `dig` we can get that ip of `example.com` is `93.184.215.14` and it has only 1 related name.
