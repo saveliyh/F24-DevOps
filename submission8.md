@@ -98,3 +98,8 @@ Untagged: ubuntu:latest
 Untagged: ubuntu@sha256:dfc10878be8d8fc9c61cbff33166cb1d1fe44391539243703c72766894fa834a
 Deleted: sha256:b1e9cef3f2977f8bdd19eb9ae04f83b315f80fe4f5c5651fedf41482c12432f7
 ```
+
+# Task 2
+
+## comands
+
