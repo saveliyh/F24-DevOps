@@ -101,5 +101,64 @@ Deleted: sha256:b1e9cef3f2977f8bdd19eb9ae04f83b315f80fe4f5c5651fedf41482c12432f7
 
 # Task 2
 
-## comands
+1. create archive
 
+```sh
+docker save -o ubuntu_image.tar ubuntu:latest
+```
+
+created archive with size 77Mb original image have size 78.1Mb difference may be caused by compression algorithm.
+
+2. ran ngnix container
+   
+```sh
+   docker run -d -p 81:80 --name nginx_container nginx
+```
+
+it is available on `http://localhost:81/`. I changed port to 81 because 80 is reserved by system.
+
+3. Change site on `http://localhost:81/` to custom one
+   
+```sh
+  docker cp index.html nginx_container:/usr/share/nginx/html/index.html
+```
+
+4. create custom image
+   
+```sh
+docker commit nginx_container my_website:latest
+```
+
+5. remove original container
+   
+```sh
+docker rm -f nginx_container
+```
+
+6. run custom container from image
+
+```sh
+docker run -d -p 81:80 --name my_website_container my_website:latest
+```
+
+it is available on `http://localhost:81/`
+
+7. analisys of changes
+
+
+```sh
+docker diff my_website_container
+```
+
+output:
+
+```sh
+C /run
+C /run/nginx.pid
+C /etc
+C /etc/nginx
+C /etc/nginx/conf.d
+C /etc/nginx/conf.d/default.conf
+```
+
+after creation of this container were changed /run/nginx.pid and /etc/nginx/conf.d/default.conf and directories on the path to this files.
