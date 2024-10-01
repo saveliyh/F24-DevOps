@@ -29,5 +29,5 @@ jobs:
           echo "kernel info: ${{ steps.info.outputs.kernel-release}}"
       - run: |
           echo "Runner information:"
-          echo "name: ${{ runner.name }}""
+          echo "name: ${{ runner.name }}"
       - run: echo "🍏 This job's status is ${{ job.status }}."
