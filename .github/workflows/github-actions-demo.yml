@@ -22,9 +22,12 @@ jobs:
       - run: |
           echo "Hardware information:"
           echo "cpu: ${{ steps.info.outputs.cpu-model}}"
-          echo "cpu cores: ${{ steps.info.outputs.cpu-cores}}"
+          echo "cpu cores: ${{ steps.info.outputs.cpu-core}}"
       - run: |
           echo "Operating system information:"
           echo "os name: ${{ steps.info.outputs.name}}"
           echo "kernel info: ${{ steps.info.outputs.kernel-release}}"
+      - run: |
+          echo "Runner information:"
+          echo "name: ${{ runner.name }}""
       - run: echo "🍏 This job's status is ${{ job.status }}."

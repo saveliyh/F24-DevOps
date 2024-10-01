@@ -17,3 +17,14 @@
 
 To run workflow manually I added `workflow_dispatch` trigger to it and created workflow with same name and trigger `workflow_dispatch` in master branch.
 
+## system information
+
+To get information I added to `steps` part
+```
+- uses: kenchan0130/actions-system-info@master
+    id: info
+```
+
+this added variables with hardware and os specific information. After it I printed this OS and hardware information by `echo` command
+
+To get runner info I used built-in variable `runner.name`
