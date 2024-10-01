@@ -10,3 +10,10 @@
 - GitHub action triggered by push
 - GitHub can see added file in repository
 - GitHub checkout does not pull special github files like file with github actions
+
+# Task 2
+
+## Manual trigger
+
+To run workflow manually I added `workflow_dispatch` trigger to it and created workflow with same name and trigger `workflow_dispatch` in master branch.
+
