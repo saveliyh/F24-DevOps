@@ -1,0 +1,15 @@
+## link to file:
+ https://ipfs.io/ipns/k51qzi5uqu5dl14uz6zzpi73gjrcovarbfwzmrcascexu54q69iqn81mrfh231
+
+## hash: 
+k51qzi5uqu5dl14uz6zzpi73gjrcovarbfwzmrcascexu54q69iqn81mrfh231
+
+## CID: 
+QmZS4jmot7fTduHjtPNwQgWUpGks1c2Dap8oiJW8AUxNJ2
+
+## BandWidth:
+
+![Bandwidth](image.png)
+
+## Peers:
+![Peers](image-1.png)
